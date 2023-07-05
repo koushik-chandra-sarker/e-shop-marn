@@ -1,3 +1,5 @@
+import colors from "tailwindcss/colors.js";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -17,16 +19,16 @@ export default {
     container: {
       center: true,
       padding: '1rem',
-
       screens: {
         sm: '600px',
-        md: '728px',
+        md: '740px',
         lg: '984px',
         xl: '1240px',
         '2xl': '1440px',
       },
     },
     colors: {
+      ...colors,
       cblue: "#0D6EFD",
       cblueLight: "#E3F0FF",
       cgreen: "#00B517",
