@@ -1,21 +1,16 @@
 import colors from "tailwindcss/colors.js";
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{html,js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     fontFamily: {
       Roboto: ["Roboto", "sans-serif"],
       Poppins: ["Poppins", "sans-serif"]
     },
-    fontSize: {
-      body:'16px',
-      'body-small': '14px',
-      'body-micro': '12px'
-    },
+
     container: {
       center: true,
       padding: '1rem',
@@ -24,18 +19,17 @@ export default {
         md: '740px',
         lg: '984px',
         xl: '1240px',
-        '2xl': '1440px',
       },
     },
     colors: {
       ...colors,
       cblue: "#0D6EFD",
-      cblueLight: "#E3F0FF",
+      'cblue-light': "#E3F0FF",
       cgreen: "#00B517",
-      cgreenLight: "#C3FFCB",
+      'cgreen-light': "#C3FFCB",
       cred: "#FA3434",
       corange: "#FF9017",
-      corangeLight: "#FFE5BF",
+      'corange-light': "#FFE5BF",
       cgray:{
         100: '#F7FAFC',
         200: '#EFF2F4',
@@ -47,7 +41,11 @@ export default {
       }
     },
     extend: {
-
+      fontSize: {
+        body:'16px',
+        'body-small': '14px',
+        'body-micro': '12px'
+      },
     },
   },
   plugins: [],

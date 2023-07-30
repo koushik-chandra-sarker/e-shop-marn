@@ -9,8 +9,8 @@ import HeaderButton from "../../button/HeaderButton";
 
 const Header = () => {
   return (
-    <div>
-      <header className={"hidden md:block container mx-auto"}>
+    <div className={'bg-white'}>
+      <header className={"hidden md:block container my-0 mx-auto bg-white"}>
         <div className={"flex py-[20px] gap-10 items-center justify-between"}>
           <img className={"h-[46px]"} src={logo} alt="Logo" />
           <div>

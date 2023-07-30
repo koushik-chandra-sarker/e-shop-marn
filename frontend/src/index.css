@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+    .container {
+        @apply my-[20px];
+    }
+}
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+    .btn{
+        @apply p-2;
+    }
+    .btn-primary{
+        @apply bg-cblue text-white
+    }
+    .btn-small{
+        @apply py-1
+    }
+}
+
